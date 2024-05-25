@@ -1,10 +1,10 @@
-/* style.css */
+
 .index-page .navbar a {
-    color: #FFFFFF; /* Beyaz metin */
+    color: #FFFFFF;
     padding: 12px 20px;
     text-decoration: none;
     font-size: 18px;
-    background: linear-gradient(45deg, #C8A2C8, #30D5C8); /* Lila'dan turkuaza geçiş */
+    background: linear-gradient(45deg, #C8A2C8, #30D5C8);
 }
 .index-page .product-grid {
     display: grid;
@@ -13,7 +13,7 @@
     margin-top: 20px;
 }
 .index-page .product {
-    background-color: #C8A2C8; /* Lila arka plan */
+    background-color: #C8A2C8;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
