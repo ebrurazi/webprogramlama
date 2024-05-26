@@ -9,6 +9,9 @@ namespace MyAspNetApp.Pages.Data
 
         public MongoDbContext()
         {
+
+           
+
             var client = new MongoClient("mongodb+srv://zehra:1234@cluster0.n8aotxw.mongodb.net/");
             _database = client.GetDatabase("web");
         }

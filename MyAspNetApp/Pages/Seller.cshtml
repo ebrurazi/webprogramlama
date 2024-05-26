@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Satıcı Sayfası</title>
+    <script src="https://cdn.jsdelivr.net/npm/realm-web/dist/bundle.dom.min.js"></script>
+</head>
+<body>
+    <h1>Satıcı Sayfası</h1>
+    <div>
+        <input type="text" id="productName" placeholder="Ürün İsmi">
+        <input type="number" id="productPrice" placeholder="Ürün Fiyatı">
+        <button onclick="addProduct()">Ürünü Kaydet</button>
+    </div>
+
+    <script>
+        const app = new Realm.App({ id: "your-realm-app-id" }); // Uygulama ID'nizi girin
+
+        async function login() {
+            const credentials = Realm.Credentials.anonymous(); // Anonim kimlik doğrulaması
+            try {
+                const user = await app.logIn(credentials);
+                return user;
+            } catch (err) {
+                console.error("Login failed:", err);
+            }
+        }
+
+        async function addProduct() {
+            const productName = document.getElementById('productName').value;
+            const productPrice = parseFloat(document.getElementById('productPrice').value);
+
+            const user = await login();
+            if (user) {
+                const mongo = app.currentUser.mongoClient("mongodb-atlas");
+                const products = mongo.db("yeni").collection("web");
+                try {
+                    await products.insertOne({ Name: productName, Price: productPrice });
+                    console.log("Ürün eklendi");
+                    alert("Ürün başarıyla kaydedildi!");
+                } catch (err) {
+                    console.error("Ürün kaydedilirken bir hata oluştu:", err);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

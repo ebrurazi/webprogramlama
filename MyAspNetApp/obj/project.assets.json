@@ -781,26 +781,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/ebrurazi/.nuget/packages/": {}
+    "C:\\Users\\ZEHRA\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/MyAspNetApp.csproj",
+      "projectUniqueName": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\MyAspNetApp.csproj",
       "projectName": "MyAspNetApp",
-      "projectPath": "/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/MyAspNetApp.csproj",
-      "packagesPath": "/Users/ebrurazi/.nuget/packages/",
-      "outputPath": "/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/",
+      "projectPath": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\MyAspNetApp.csproj",
+      "packagesPath": "C:\\Users\\ZEHRA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ebrurazi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ZEHRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
-        "/usr/local/share/dotnet/sdk/7.0.314/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -843,7 +848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.409\\RuntimeIdentifierGraph.json"
       }
     }
   }
