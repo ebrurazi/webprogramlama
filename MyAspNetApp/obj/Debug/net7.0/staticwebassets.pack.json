@@ -17,6 +17,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun1.jpg",
+      "PackagePath": "staticwebassets\\img\\urun1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun2.jpg",
+      "PackagePath": "staticwebassets\\img\\urun2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun3.jpg",
+      "PackagePath": "staticwebassets\\img\\urun3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun4.jpg",
+      "PackagePath": "staticwebassets\\img\\urun4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun5.jpg",
+      "PackagePath": "staticwebassets\\img\\urun5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\img\\urun6.jpg",
+      "PackagePath": "staticwebassets\\img\\urun6.jpg"
+    },
+    {
       "Id": "C:\\Users\\ZEHRA\\Desktop\\Web\\webprogramlama\\MyAspNetApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

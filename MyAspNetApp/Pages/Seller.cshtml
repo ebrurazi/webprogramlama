@@ -1,48 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Satıcı Sayfası</title>
-    <script src="https://cdn.jsdelivr.net/npm/realm-web/dist/bundle.dom.min.js"></script>
-</head>
-<body>
-    <h1>Satıcı Sayfası</h1>
-    <div>
-        <input type="text" id="productName" placeholder="Ürün İsmi">
-        <input type="number" id="productPrice" placeholder="Ürün Fiyatı">
-        <button onclick="addProduct()">Ürünü Kaydet</button>
+@page
+@model MyAspNetApp.Pages.SellerModel
+
+@{
+    ViewData["Title"] = "Satıcı Sayfası";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" id="productForm">
+    <div class="form-group">
+        <label for="productName">Ürün Adı</label>
+        <input type="text" class="form-control" id="productName" name="productName" required>
     </div>
+    <div class="form-group">
+        <label for="productPrice">Ürün Fiyatı</label>
+        <input type="number" class="form-control" id="productPrice" name="productPrice" required>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addProduct()">Ürünü Kaydet</button>
+</form>
 
-    <script>
-        const app = new Realm.App({ id: "your-realm-app-id" }); // Uygulama ID'nizi girin
+<script>
+    async function addProduct() {
+        const productName = document.getElementById('productName').value;
+        const productPrice = document.getElementById('productPrice').value;
+        
+        const response = await fetch('/api/products', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name: productName, price: parseFloat(productPrice) }),
+        });
 
-        async function login() {
-            const credentials = Realm.Credentials.anonymous(); // Anonim kimlik doğrulaması
-            try {
-                const user = await app.logIn(credentials);
-                return user;
-            } catch (err) {
-                console.error("Login failed:", err);
-            }
-        }
-
-        async function addProduct() {
-            const productName = document.getElementById('productName').value;
-            const productPrice = parseFloat(document.getElementById('productPrice').value);
-
-            const user = await login();
-            if (user) {
-                const mongo = app.currentUser.mongoClient("mongodb-atlas");
-                const products = mongo.db("yeni").collection("web");
-                try {
-                    await products.insertOne({ Name: productName, Price: productPrice });
-                    console.log("Ürün eklendi");
-                    alert("Ürün başarıyla kaydedildi!");
-                } catch (err) {
-                    console.error("Ürün kaydedilirken bir hata oluştu:", err);
-                }
-            }
-        }
-    </script>
-</body>
-</html>
+        const result = await response.json();
+        console.log(result);
+    }
+</script>
