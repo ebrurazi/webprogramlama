@@ -23,3 +23,7 @@
     height: 250px;
     object-fit: cover;
 }
+
+#cart-icon {
+    margin-right: 20px; 
+}
