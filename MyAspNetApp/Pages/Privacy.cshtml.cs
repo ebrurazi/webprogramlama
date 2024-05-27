@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MyAspNetApp.Pages;
-
-public class PrivacyModel : PageModel
+namespace MyAspNetApp.Pages
 {
-    private readonly ILogger<PrivacyModel> _logger;
-
-    public PrivacyModel(ILogger<PrivacyModel> logger)
+    public class AboutUsModel : PageModel
     {
-        _logger = logger;
-    }
+        private readonly ILogger<AboutUsModel> _logger;
 
-    public void OnGet()
-    {
+        public AboutUsModel(ILogger<AboutUsModel> logger)
+        {
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+        }
     }
 }
-

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
@@ -23,10 +24,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About Us</a>
                         </li>
                     </ul>
                     <div class="navbar-nav">
+                        <a class="nav-item nav-link me-3" href="#" id="cart-icon">
+                            <span class="bi bi-cart" style="position: relative;">
+                                <span id="cart-count" style="position: absolute; top: -10px; right: -10px; background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">0</span>
+                            </span>
+                        </a>
                         <a class="nav-item nav-link btn btn-primary text-white" asp-area="" asp-page="/Login">Giriş Yap</a>
                     </div>
                 </div>
@@ -42,7 +48,7 @@
     {
         <footer class="border-top footer text-muted">
             <div class="container">
-                &copy; 2024 - MyAspNetApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+                &copy; 2024 - MyAspNetApp - <a asp-area="" asp-page="/About">About Us</a>
             </div>
         </footer>
     }
