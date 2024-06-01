@@ -1,4 +1,5 @@
-@model MyAspNetApp.Models.RegisterModel
+@page
+@model MyAspNetApp.Pages.RegisterModel
 
 @{
     ViewData["Title"] = "Kayıt Ol";
@@ -7,7 +8,6 @@
 <h2>@ViewData["Title"]</h2>
 
 <form method="post">
-    @Html.AntiForgeryToken()
     <div class="form-group">
         <label for="username">Kullanıcı Adı</label>
         <input type="text" class="form-control" id="username" name="username" asp-for="Username" required>
