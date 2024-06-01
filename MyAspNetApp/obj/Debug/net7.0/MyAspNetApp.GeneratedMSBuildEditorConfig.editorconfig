@@ -9,63 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyAspNetApp
 build_property.RootNamespace = MyAspNetApp
-build_property.ProjectDir = /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = /Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp
+build_property.MSBuildProjectDirectory = /Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/About.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/AdminDashboard.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Error.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Index.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Login.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Register.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Seller.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsbGVyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/SellerDashboard.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/SellerDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsbGVyRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/UserDashboard.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Urunekle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXJ1bmVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/_ViewImports.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/_ViewStart.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/Pages/Shared/_Layout.cshtml]
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t8vfbinjzr

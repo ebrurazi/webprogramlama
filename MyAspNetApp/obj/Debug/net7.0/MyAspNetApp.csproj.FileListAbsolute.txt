@@ -120,14 +120,7 @@ C:/Users/ZEHRA/Desktop/Web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/ref/MyAsp
 /Users/suheylaikbalicme/Desktop/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.pdb
 /Users/suheylaikbalicme/Desktop/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.genruntimeconfig.cache
 /Users/suheylaikbalicme/Desktop/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/ref/MyAspNetApp.dll
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.csproj.AssemblyReference.cache
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.GeneratedMSBuildEditorConfig.editorconfig
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.AssemblyInfoInputs.cache
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.AssemblyInfo.cs
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.csproj.CoreCompileInputs.cache
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.MvcApplicationPartsAssemblyInfo.cache
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.RazorAssemblyInfo.cache
-/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.RazorAssemblyInfo.cs
+<<<<<<< HEAD
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/bin/Debug/net7.0/appsettings.Development.json
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/bin/Debug/net7.0/appsettings.json
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/bin/Debug/net7.0/MyAspNetApp.staticwebassets.runtime.json
@@ -199,3 +192,5 @@ C:/Users/ZEHRA/Desktop/Web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/ref/MyAsp
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.pdb
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/MyAspNetApp.genruntimeconfig.cache
 /Users/suheylaikbalicme/web/webprogramlama/MyAspNetApp/obj/Debug/net7.0/ref/MyAspNetApp.dll
+=======
+>>>>>>> 4738cc1 (Kayıt olunduğunda satıcının ürün yüklenmesini sağladım.Bu sayfada gözükmektedir. MongoDB'ye kaydolmaktadır ürünler, oradan da ekranda gözükmektedir.)

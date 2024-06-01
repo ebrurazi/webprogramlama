@@ -4,16 +4,18 @@ using MyAspNetApp.Pages.Data;
 using MyAspNetApp.Pages.Models;
 using MongoDB.Driver;
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace MyAspNetApp.Pages
 {
     public class RegisterModel : PageModel
     {
-        private readonly MongoDbContext _dbContext;
+        private readonly MongoDbContext _context;
 
-        public RegisterModel(MongoDbContext dbContext)
+        public RegisterModel(MongoDbContext context)
         {
-            _dbContext = dbContext;
+            _context = context;
         }
 
         [BindProperty]
@@ -55,9 +57,16 @@ namespace MyAspNetApp.Pages
                 Roles = new List<string> { Role }
             };
 
-            _dbContext.Users.InsertOne(user);
+            _context.Users.InsertOne(user);
 
-            return RedirectToPage("/Index");
+            if (Role == "Seller")
+            {
+                return RedirectToPage("/SellerDashboard");
+            }
+            else
+            {
+                return RedirectToPage("/Index");
+            }
         }
     }
 }

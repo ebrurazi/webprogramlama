@@ -1,5 +1,5 @@
 @page
-@model LoginModel
+@model MyAspNetApp.Pages.LoginModel
 
 @{
     ViewData["Title"] = "Giriş Yap";
@@ -10,18 +10,11 @@
 <form method="post">
     <div class="form-group">
         <label for="username">Kullanıcı Adı</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+        <input type="text" class="form-control" id="username" name="username" asp-for="Username" required>
     </div>
     <div class="form-group">
         <label for="password">Şifre</label>
-        <input type="password" class="form-control" id="password" name="password" required>
+        <input type="password" class="form-control" id="password" name="password" asp-for="Password" required>
     </div>
     <button type="submit" class="btn btn-primary">Giriş Yap</button>
-    <a class="btn btn-secondary" asp-page="/Register">Kayıt Ol</a>
-    <a class="btn btn-info" asp-page="/Seller">Satıcı Sayfası</a>
 </form>
-
-@if (!string.IsNullOrEmpty(Model.ErrorMessage))
-{
-    <div class="alert alert-danger">@Model.ErrorMessage</div>
-}
