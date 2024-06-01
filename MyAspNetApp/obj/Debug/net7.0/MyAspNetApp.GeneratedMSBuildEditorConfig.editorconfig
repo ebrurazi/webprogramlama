@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,8 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/SellerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VsbGVyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/UserDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ebrurazi/Documents/GitHub/webprogramlama/MyAspNetApp/Pages/_ViewImports.cshtml]
