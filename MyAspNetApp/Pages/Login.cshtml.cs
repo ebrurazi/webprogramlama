@@ -10,9 +10,9 @@ namespace MyAspNetApp.Pages
     {
         private readonly MongoDbContext _context;
 
-        public LoginModel()
+        public LoginModel(MongoDbContext context)
         {
-            _context = new MongoDbContext();
+            _context = context;
         }
 
         [BindProperty]
@@ -20,7 +20,6 @@ namespace MyAspNetApp.Pages
         [BindProperty]
         public string Password { get; set; }
 
-        // Hata mesajı için bir özellik ekleyin
         public string ErrorMessage { get; set; }
 
         public void OnGet()
@@ -34,7 +33,6 @@ namespace MyAspNetApp.Pages
                 return Page();
             }
 
-            // Kullanıcı doğrulama
             var user = _context.Users.Find(u => u.Username == Username && u.Password == Password).FirstOrDefault();
             if (user == null)
             {
@@ -42,7 +40,7 @@ namespace MyAspNetApp.Pages
                 return Page();
             }
 
-            return RedirectToPage("/Index"); // Başarılı giriş sonrası ana sayfaya yönlendirme
+            return RedirectToPage("/Index");
         }
     }
 }
