@@ -2,28 +2,37 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyAspNetApp.Pages.Data;
 using MyAspNetApp.Pages.Models;
+using MongoDB.Driver;
+using System;
 
 namespace MyAspNetApp.Pages
 {
     public class RegisterModel : PageModel
     {
-        private readonly MongoDbContext _context;
+        private readonly MongoDbContext _dbContext;
 
-        public RegisterModel()
+        public RegisterModel(MongoDbContext dbContext)
         {
-            _context = new MongoDbContext();
+            _dbContext = dbContext;
         }
 
         [BindProperty]
-        public string Username { get; set; }
+        public string Username { get; set; } = string.Empty;
+
         [BindProperty]
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
+
         [BindProperty]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
+
         [BindProperty]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = string.Empty;
+
         [BindProperty]
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; set; } = DateTime.Now;
+
+        [BindProperty]
+        public string Role { get; set; } = string.Empty;
 
         public void OnGet()
         {
@@ -36,19 +45,19 @@ namespace MyAspNetApp.Pages
                 return Page();
             }
 
-            // Yeni kullanıcı oluşturma
             var user = new User
             {
                 Username = Username,
-                Password = Password, // Şifreyi hashleyin!
+                Password = Password,
                 FirstName = FirstName,
                 LastName = LastName,
-                BirthDate = BirthDate
+                BirthDate = BirthDate,
+                Roles = new List<string> { Role }
             };
 
-            _context.Users.InsertOne(user);
+            _dbContext.Users.InsertOne(user);
 
-            return RedirectToPage("/Index"); // Başarılı kayıt sonrası ana sayfaya yönlendirme
+            return RedirectToPage("/Index");
         }
     }
 }
