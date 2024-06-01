@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +38,22 @@ namespace MyAspNetApp
                 return client.GetDatabase(settings.DatabaseName);
             });
 
+            // JWT Authentication
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options =>
+                    {
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuer = true,
+                            ValidateAudience = true,
+                            ValidateLifetime = true,
+                            ValidateIssuerSigningKey = true,
+                            ValidIssuer = Configuration["Jwt:Issuer"],
+                            ValidAudience = Configuration["Jwt:Audience"],
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                        };
+                    });
+
             services.AddControllers();
             services.AddRazorPages();
         }
@@ -50,10 +69,11 @@ namespace MyAspNetApp
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseHttpsRedirection(); // HTTPS yönlendirmesini etkinleştirme
             app.UseStaticFiles();
-
             app.UseRouting();
-
+            
+            app.UseAuthentication(); // Authentication middleware ekleme
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
